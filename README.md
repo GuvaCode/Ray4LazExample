@@ -1,4 +1,4 @@
-**Additional examples from third-party developers.**
+**Additional raylib examples from third-party developers.**
 Rewritten for the Pascal language.
 
 **Ergo** 
