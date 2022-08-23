@@ -7,3 +7,7 @@ https://github.com/brihernandez/Ergo
 
 Fly a little ship around in a raylib project. The main purpose of this project has to figure out how to handle arbitrary rotations, since the built in rotation functions don't make this easy.
 
+**Toon Shader**
+https://bedroomcoders.co.uk/cell-shader-revisited/
+![enter image description here](toonShader/prev.mp4)
+
