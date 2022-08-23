@@ -9,5 +9,7 @@ Fly a little ship around in a raylib project. The main purpose of this project h
 
 **Toon Shader**
 https://bedroomcoders.co.uk/cell-shader-revisited/
-![enter image description here](toonShader/prev.mp4)
+![enter image description here](toonShader/prev.gif)
+
+I think Cell Shaders give a great style to games, often allowing you to utilise low poly models that end up looking great. I was going to also look at maybe altering the way that the out lining shader works slightly, but on balance I like the way it looks, so I left it as is too.
 
