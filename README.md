@@ -13,3 +13,11 @@ https://bedroomcoders.co.uk/cell-shader-revisited/
 
 I think Cell Shaders give a great style to games, often allowing you to utilise low poly models that end up looking great. I was going to also look at maybe altering the way that the out lining shader works slightly, but on balance I like the way it looks, so I left it as is too.
 
+**RPG Camera 2D**
+![enter image description here](RPG_Camera2D/prev.png)
+
+I Small example uses camera 2d in rpg style
+
+
+
+

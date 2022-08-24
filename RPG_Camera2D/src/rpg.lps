@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="rpg.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos Y="10"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/source/raylib.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="989"/>
+        <CursorPos X="27" Y="1010"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/examples/textures/textures_sprite_explosion.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="20"/>
+        <CursorPos X="16" Y="79"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/examples/textures/textures_background_scrolling.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="32"/>
+        <CursorPos X="15" Y="56"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="16">
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Column="14"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/examples/textures/textures_sprite_explosion.pas"/>
+        <Caret Line="82" Column="32" TopLine="59"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="24" Column="27" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="33" Column="49" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="48" Column="53" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="60" Column="87" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/source/raylib.pas"/>
+        <Caret Line="1621" Column="24" TopLine="1595"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/source/raylib.pas"/>
+        <Caret Line="1212" Column="19" TopLine="1194"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="60" Column="27" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="63" Column="20" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="33" Column="3" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/source/raylib.pas"/>
+        <Caret Line="223" Column="15" TopLine="203"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="57" Column="27" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="75" Column="7" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="72" Column="29" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="52" Column="18" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="rpg.lpr"/>
+        <Caret Line="45" Column="29" TopLine="22"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
