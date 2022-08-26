@@ -29,7 +29,7 @@ An example of the transformation of one object into another.
 Example of mouse drag panning for 2D camera
 
 **World space panning**
-![World space panning](https://github.com/GuvaCode/Ray4LazExample/raw/main/raylib%20worldspace%20panning/prev.png/prev.png)
+![World space panning](https://github.com/GuvaCode/Ray4LazExample/raw/main/raylib%20worldspace%20panning/prev.png)
 
 Example of world space panning
 
