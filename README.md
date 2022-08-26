@@ -20,13 +20,21 @@ I Small example uses camera 2d in rpg style
 
 **Morphing Example**
 ![Morphing Example](MorphTest/prev.png)
+
 An example of the transformation of one object into another.
 
 **Example of mouse drag panning for 2D camera**
 ![Morphing Example](Raylib example of mouse drag panning for 2D camera/prev.png)
+
 Example of mouse drag panning for 2D camera
 
 **World space panning**
 ![Morphing Example](raylib worldspace panning/prev.png)
+
 Example of world space panning
+
+**FPS shoot bullet**
+![Morphing Example](Fps shoot bullet/prev.png)
+
+FPS shoot bullet 3d example
 

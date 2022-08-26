@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="FPS_Shoot_Bullet.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="78"/>
+        <CursorPos X="31" Y="95"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../.lazarus/onlinepackagemanager/packages/Ray4Laz/source/raylib.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="506"/>
+        <CursorPos X="15" Y="511"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="1">
+      <Position>
+        <Filename Value="FPS_Shoot_Bullet.lpr"/>
+        <Caret Line="9" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="FPS_Shoot_Bullet.lpr"/>
+        <Caret Line="95" Column="69" TopLine="78"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
