@@ -24,7 +24,7 @@ I Small example uses camera 2d in rpg style
 An example of the transformation of one object into another.
 
 **Example of mouse drag panning for 2D camera**
-![drag panning for 2D camera](Raylib example of mouse drag panning for 2D camera/prev.png)
+![drag panning for 2D camera](https://github.com/GuvaCode/Ray4LazExample/raw/main/Raylib%20example%20of%20mouse%20drag%20panning%20for%202D%20camera/prev.png)
 
 Example of mouse drag panning for 2D camera
 
