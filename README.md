@@ -52,15 +52,3 @@ FPS camera in cubebox 3d example
 ![camera in LCL](Visual_3d_Camera_in_LCL/prev.png)
 
 my experement uses raylib in lcl
-
-
-
-
-
-
-
-
-
-
-
-
