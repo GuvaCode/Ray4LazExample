@@ -49,6 +49,7 @@ FPS 50x50 Cube ground 3d example
 FPS camera in cubebox 3d example
 
 **Camera in lcl**
-![camera in LCL](Visual_3d_Camera_in_LCL/prev.png)
+
+![](Visual_3d_Camera_in_LCL/prev.png)
 
 my experement uses raylib in lcl
