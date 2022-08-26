@@ -22,6 +22,8 @@ I Small example uses camera 2d in rpg style
 ![Morphing Example](MorphTest/prev.png)
 An example of the transformation of one object into another.
 
-
+**Example of mouse drag panning for 2D camera**
+![Morphing Example](Raylib example of mouse drag panning for 2D camera/prev.png)
+An example of the transformation of one object into another.
 
 
