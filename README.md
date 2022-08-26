@@ -39,7 +39,22 @@ Example of world space panning
 FPS shoot bullet 3d example
 
 **FPS 50x50 Cube ground**
-![FPS shoot bullet](Fps50x50CubeGround/prev.png)
+![Cube ground](Fps50x50CubeGround/prev.png)
 
-FPS shoot bullet 3d example
+FPS 50x50 Cube ground 3d example
+
+**FPS camera in cubebox**
+![camera in cubebox](FpsCameraInCubeBox/prev.png)
+
+FPS camera in cubebox 3d example
+
+
+
+
+
+
+
+
+
+
 
