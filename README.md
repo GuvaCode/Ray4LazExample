@@ -29,12 +29,12 @@ An example of the transformation of one object into another.
 Example of mouse drag panning for 2D camera
 
 **World space panning**
-![World space panning](raylib worldspace panning/prev.png)
+![World space panning](https://github.com/GuvaCode/Ray4LazExample/raw/main/raylib%20worldspace%20panning/prev.png/prev.png)
 
 Example of world space panning
 
 **FPS shoot bullet**
-![FPS shoot bullet](Fps shoot bullet/prev.png)
+![FPS shoot bullet](https://github.com/GuvaCode/Ray4LazExample/raw/main/Fps%20shoot%20bullet/prev.png)
 
 FPS shoot bullet 3d example
 
