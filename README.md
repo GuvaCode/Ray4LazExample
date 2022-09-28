@@ -68,11 +68,22 @@ FPS 50x50 Cube ground 3d example
 FPS camera in cubebox 3d example
 
 
+**Using Timers in Raylib**
+
+![camera in cubebox](Timer/Timer.png)
+
+https://www.youtube.com/watch?v=vGlvTWUctTQ
+
+A quick overview of how to create and use timers in raylib
+
+
 **Camera in lcl**
 
 ![camera in LCL](Visual_3d_Camera_in_LCL/prev.png)
 
 my experement uses raylib in lcl
+
+
 
 
 
