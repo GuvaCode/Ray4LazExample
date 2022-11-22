@@ -23,6 +23,13 @@ I think Cell Shaders give a great style to games, often allowing you to utilise 
 https://github.com/raysan5/raylib-intro-course
 ![blockGame](blockGame/blocks_game.gif)
 
+Implements a Blocks game similar to the well-known Arkanoid (Taito, 1986).
+
+**Pong**
+
+![Pong](pong/pong.gif)
+
+Classic pong game
 
 **RPG Camera 2D**
 
