@@ -7,8 +7,9 @@
       <Unit>
         <Filename Value="toonShader.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="147"/>
-        <CursorPos X="36" Y="157"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="86"/>
+        <CursorPos X="42" Y="86"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
@@ -28,7 +29,6 @@
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/inc/mathh.inc"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="101"/>
         <CursorPos X="14" Y="112"/>

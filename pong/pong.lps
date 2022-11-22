@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="pong.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="203"/>
+        <CursorPos X="32" Y="213"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../lessons7/blocks_game_audio.lpr"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="276"/>
+        <CursorPos X="52" Y="287"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1664"/>
+        <CursorPos Y="1675"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="160" Column="113" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="121" Column="40" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="20" Column="43"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="121" Column="52" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="132" Column="20" TopLine="122"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="134" Column="36" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="20" Column="60" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="134" Column="51" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="152" Column="114" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="159" Column="83" TopLine="147"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="168" Column="86" TopLine="151"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="166" Column="87" TopLine="155"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="181" Column="85" TopLine="165"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="188" Column="54" TopLine="176"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="93" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="192" Column="64" TopLine="181"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="214" Column="14" TopLine="207"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="218" TopLine="206"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="220" Column="36" TopLine="207"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="219" Column="75" TopLine="208"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="218" Column="77" TopLine="208"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="231" Column="37" TopLine="220"/>
+      </Position>
+      <Position>
+        <Filename Value="../lessons7/blocks_game_audio.lpr"/>
+        <Caret Line="23" Column="24" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="231" Column="46" TopLine="220"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="230" TopLine="220"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="229" Column="52" TopLine="218"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="243" Column="36" TopLine="231"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="255" Column="39" TopLine="244"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="247" Column="91" TopLine="236"/>
+      </Position>
+      <Position>
+        <Filename Value="pong.lpr"/>
+        <Caret Line="251" Column="10" TopLine="240"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
