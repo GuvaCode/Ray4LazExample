@@ -5,7 +5,7 @@ unit SpaceShip;
 interface
 
 uses
-  Raylib, Raymath, Actor, MathUtils, Math, rlgl;
+  raylib, raymath, actor, MathUtils, math, rlgl;
 
 type
   PTrailRung = ^TrailRung;
@@ -15,8 +15,7 @@ type
     TimeToLive: Single;
   end;
 
- { TShip }
-
+{ TShip }
  TShip = class(TActor)
    public
      InputForward:Single;
@@ -128,7 +127,7 @@ begin
   ShipModel := LoadModel(modelPath);
   ShipModel.materials[0].maps[MATERIAL_MAP_ALBEDO].texture := texture;
 
-  Rotation := QuaternionFromEuler(1, 2, 0);
+  Rotation := QuaternionFromEuler(0, 0, 0);
   ShipColor := Color;
   LastRungPosition := Position;
 end;
@@ -151,13 +150,13 @@ begin
   SmoothLeft := SmoothDamp(SmoothLeft, InputLeft, ThrottleResponse, deltaTime);
   SmoothUp := SmoothDamp(SmoothUp, InputUp, ThrottleResponse, deltaTime);
 // Flying in reverse should be slower.
- //  forwardSpeedMultipilier := SmoothForward > 0.0f ? 1.0f : 0.33f;
-     forwardSpeedMultipilier := SmoothForward;//*0.1;
 
-     targetVelocity := Vector3Zero();
+ forwardSpeedMultipilier := ifthen(SmoothForward > 0.0, 1.0, 0.33);
 
-     targetVelocity := Vector3Add(
-     targetVelocity,Vector3Scale(GetForward(), MaxSpeed * forwardSpeedMultipilier * SmoothForward));
+ targetVelocity := Vector3Zero();
+
+ targetVelocity := Vector3Add(
+ targetVelocity,Vector3Scale(GetForward(), MaxSpeed * forwardSpeedMultipilier * SmoothForward));
 
      targetVelocity := Vector3Add(
   		targetVelocity,
@@ -215,22 +214,16 @@ begin
 end;
 
 procedure TShip.Draw(showDebugAxes: Boolean);
-var Scal:TMatrix;
 begin
-       //Scal:=ShipModel.transform;
-      // Scal:=MatrixScale(4,4,4);
-      // ShipModel.transform:=Scal;
-
- 	DrawModel(ShipModel, Vector3Zero, 1, ShipColor);
-
-	if (showDebugAxes) then
-	begin
-		//BeginBlendMode(BLEND_ADDITIVE);
-		DrawLine3D(Position, Vector3Add(Position, GetForward()),ColorCreate( 0, 0, 255, 255 ));
-		DrawLine3D(Position, Vector3Add(Position, GetLeft()), ColorCreate( 255, 0, 0, 255 ));
-		DrawLine3D(Position, Vector3Add(Position, GetUp()), ColorCreate( 0, 255, 0, 255 ));
-		//EndBlendMode();
-	end;
+  DrawModel(ShipModel, Vector3Zero, 1, ShipColor);
+  if (showDebugAxes) then
+  begin
+    //BeginBlendMode(BLEND_ADDITIVE);
+    DrawLine3D(Position, Vector3Add(Position, GetForward()),ColorCreate( 0, 0, 255, 255 ));
+    DrawLine3D(Position, Vector3Add(Position, GetLeft()), ColorCreate( 255, 0, 0, 255 ));
+    DrawLine3D(Position, Vector3Add(Position, GetUp()), ColorCreate( 0, 255, 0, 255 ));
+    //EndBlendMode();
+  end;
 end;
 
 procedure TShip.DrawTrail;

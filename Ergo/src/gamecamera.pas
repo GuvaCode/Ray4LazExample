@@ -18,6 +18,9 @@ type
       procedure Begin3DDrawing;
       procedure EndDrawing;
       function GetPosition: TVector3;
+      function GetTarget: TVector3;
+      function GetUp: TVector3;
+      function GetFovy: Single;
     private
       Camera: TCamera3D;
       SmoothPosition: TVector3;
@@ -101,6 +104,21 @@ end;
 function TGameCamera.GetPosition: TVector3;
 begin
   result:=Camera.position;
+end;
+
+function TGameCamera.GetTarget: TVector3;
+begin
+  result:=Camera.target;
+end;
+
+function TGameCamera.GetUp: TVector3;
+begin
+ result:=Camera.up;
+end;
+
+function TGameCamera.GetFovy: Single;
+begin
+  result:=Camera.fovy;
 end;
 
 end.

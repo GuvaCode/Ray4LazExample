@@ -8,40 +8,34 @@ uses
   raylib, raymath;
 
 type
-  { Actor }
-
-  { TActor }
-
+ { TActor }
   TActor = class
-    public
+  public
+    Position: TVector3;
+    Velocity: TVector3;
+    Rotation: TQuaternion;
 
-      Position: TVector3;
-      Velocity: TVector3;
-      Rotation: TQuaternion;
+    constructor Create;
+    function GetForward:TVector3;
+    function GetBack:TVector3;
+    function GetRight:TVector3;
+    function GetLeft:TVector3;
+    function GetUp:TVector3;
+    function GetDown:TVector3;
 
-      constructor Create;
-      function GetForward:TVector3;
-      function GetBack:TVector3;
-      function GetRight:TVector3;
-      function GetLeft:TVector3;
-      function GetUp:TVector3;
-      function GetDown:TVector3;
-
-      function TransformPoint(point: TVector3): TVector3;
-      procedure RotateLocalEuler(axis: TVector3; degrees: single);
+    function TransformPoint(point: TVector3): TVector3;
+    procedure RotateLocalEuler(axis: TVector3; degrees: single);
   end;
 
 implementation
 
 { Actor }
-
 constructor TActor.Create;
 begin
   Position := Vector3Zero();
   Velocity := Vector3Zero();
   Rotation := QuaternionIdentity();
 end;
-
 
 function TActor.GetForward: TVector3;
 begin
@@ -86,9 +80,7 @@ procedure TActor.RotateLocalEuler(axis: TVector3; degrees: single);
 var radians:single;
 begin
   radians:= degrees * DEG2RAD;
-  Rotation:= QuaternionMultiply(
-		Rotation,
-		QuaternionFromAxisAngle(axis, radians));
+  Rotation:= QuaternionMultiply(Rotation, QuaternionFromAxisAngle(axis, radians));
 end;
 
 end.
