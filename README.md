@@ -37,6 +37,12 @@ Classic pong game
 
 I Small example uses camera 2d in rpg style
 
+**Snake**
+
+![Snake](Snake/prev.png)
+
+Classic snake game
+
 
 **Morphing Example**
 
