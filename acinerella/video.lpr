@@ -2,8 +2,7 @@ program video;
 
 {$mode Delphi}{$H+}
 
-uses cmem,
-raylib, acinerella, Classes, SysUtils;
+uses raylib, rlGl, acinerella, Classes, SysUtils;
 
 const
  screenWidth = 800;
@@ -15,11 +14,10 @@ var
   info: TAc_stream_info;
   videodecoder: PAc_decoder;
   i, w, h: integer;
-  psrc: PByte;
-  img: TImage;
   texture: ttexture2d;
   fs: TFileStream;
   read_cnt: integer;
+
 
   function read_proc(sender: Pointer; buf: PChar; size: integer): integer; cdecl;
   begin
@@ -30,7 +28,7 @@ var
 begin
  InitWindow(screenWidth, screenHeight, 'raylib pascal - basic window');
  videodecoder := nil;
-  fs := TFileStream.Create('data/orion.mpg', fmOpenRead);
+  fs := TFileStream.Create('chaos.mpg', fmOpenRead);
   fs.Position := 0;
   inst := ac_init();
   {$IFDEF FPC}
@@ -69,17 +67,14 @@ begin
           videodecoder := ac_create_decoder(inst, i);
           h := videodecoder^.stream_info.additional_info.video_info.frame_height;
           w := videodecoder^.stream_info.additional_info.video_info.frame_width;
-          img.width:=w;
-          img.height:=h;
-          img.mipmaps:=1;
-          img.format := PIXELFORMAT_UNCOMPRESSED_R8G8B8;
+          Texture.width:=w;
+          Texture.height:=h;
+          Texture.mipmaps:=1;
+          Texture.format:=PIXELFORMAT_UNCOMPRESSED_R8G8B8;
         end;
       end;
      end;
    end;
-
-
-
 
   if not inst^.opened then
    begin
@@ -90,23 +85,37 @@ begin
 
 while not WindowShouldClose() do
 begin
-     pack := ac_read_package(inst);
-      if pack <> nil then
-      if (videodecoder <> nil) and (videodecoder^.stream_index = pack^.stream_index) then
-      if (ac_decode_package(pack, videodecoder) > 0) then
-       begin
-        psrc := videodecoder^.buffer;
-        img.data:=psrc;
-        texture := LoadTextureFromImage(img);
-       end;
+  pack := ac_read_package(inst);
+
+  if pack <> nil then
+  if (videodecoder <> nil) and (videodecoder^.stream_index = pack^.stream_index) then
+  if (ac_decode_package(pack, videodecoder) > 0) then
+  begin
+    h := videodecoder^.stream_info.additional_info.video_info.frame_height;
+    w := videodecoder^.stream_info.additional_info.video_info.frame_width;
+    Texture.id := rlLoadTexture(videodecoder^.buffer, W,H, PIXELFORMAT_UNCOMPRESSED_R8G8B8, 1);
+    UpdateTexture(Texture, videodecoder^.buffer);
+  end;
+
+  ac_free_package(pack);
+
+
+
 
   BeginDrawing();
-  ClearBackground(BLACK);
-  DrawTexture(texture, GetScreenWidth div 2 - texture.width div 2, GetScreenHeight div 2 - texture.height div 2, WHITE);
+    ClearBackground(BLACK);
+    DrawTexturePro(texture, RectangleCreate(0,0, w, h), RectangleCreate(0,0, GetScreenWidth, GetScreenHeight), Vector2Create(0,0),0, WHITE);
   EndDrawing();
+
    end;
 
-CloseWindow(); 
+  if videodecoder <> nil then
+  ac_free_decoder(videodecoder);
+
+  ac_close(inst);
+  ac_free(inst);
+  fs.Free;
+  CloseWindow();
 
 end.
 

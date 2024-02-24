@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="fps_collison.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="46"/>
+        <CursorPos X="48" Y="48"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="collision.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="75" Y="29"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="3">
+      <Position>
+        <Filename Value="collision.pas"/>
+        <Caret Line="11" Column="160"/>
+      </Position>
+      <Position>
+        <Filename Value="collision.pas"/>
+        <Caret Line="10" Column="102"/>
+      </Position>
+      <Position>
+        <Filename Value="collision.pas"/>
+        <Caret Line="11" Column="169"/>
+      </Position>
+      <Position>
+        <Filename Value="collision.pas"/>
+        <Caret Line="8" Column="20" TopLine="19"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

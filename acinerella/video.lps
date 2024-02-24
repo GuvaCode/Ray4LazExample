@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="video.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="94"/>
+        <CursorPos X="3" Y="112"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="121"/>
+        <CursorPos X="61" Y="147"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../andorra/lib/libmpeg2.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="181"/>
+        <CursorPos X="21" Y="186"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="19">
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="119" Column="21" TopLine="100"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="86" Column="3" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="106" Column="30" TopLine="96"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="100" Column="18" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="113" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="118" Column="8" TopLine="99"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="106" Column="77" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <Caret Line="147" Column="59" TopLine="139"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="103" Column="47" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="77" Column="27" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="3" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="28" Column="15" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="27" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="112" Column="71" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <Caret Line="1699" Column="69" TopLine="1694"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <Caret Line="168" Column="6" TopLine="156"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <Caret Line="162" Column="64" TopLine="156"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="118" Column="3" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="24" Column="22" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="video.lpr"/>
+        <Caret Line="100" Column="5" TopLine="89"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
