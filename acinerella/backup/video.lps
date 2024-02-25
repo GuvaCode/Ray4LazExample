@@ -14,18 +14,20 @@
       </Unit>
       <Unit>
         <Filename Value="../../Ray4Laz/source/raylib.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="123"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="121"/>
         <CursorPos X="61" Y="147"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../andorra/lib/libmpeg2.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="42" Y="268"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="181"/>
+        <CursorPos X="21" Y="186"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="19">
