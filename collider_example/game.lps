@@ -7,7 +7,6 @@
       <Unit>
         <Filename Value="game.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="120"/>
         <CursorPos X="51" Y="130"/>
         <UsageCount Value="35"/>
@@ -15,7 +14,7 @@
       </Unit>
       <Unit>
         <Filename Value="collider.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos Y="87"/>
         <UsageCount Value="17"/>
         <Loaded Value="True"/>
@@ -44,21 +43,22 @@
       </Unit>
       <Unit>
         <Filename Value="lighting.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="85"/>
-        <CursorPos X="14"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="30" Y="22"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../Ray4Laz/source/raylib.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="1094"/>
         <CursorPos X="47" Y="1110"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="14">
+    <JumpHistory HistoryIndex="13">
       <Position>
         <Filename Value="game.lpr"/>
         <Caret Line="145" Column="25" TopLine="129"/>
@@ -112,11 +112,8 @@
         <Caret Line="130" Column="25"/>
       </Position>
       <Position>
-        <Filename Value="../Ray4Laz/source/raylib.pas"/>
-      </Position>
-      <Position>
         <Filename Value="game.lpr"/>
-        <Caret Line="130" Column="28" TopLine="120"/>
+        <Caret Line="130" Column="51" TopLine="120"/>
       </Position>
     </JumpHistory>
     <RunParams>

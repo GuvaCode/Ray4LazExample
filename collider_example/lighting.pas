@@ -19,7 +19,7 @@ const
  SHADOW_CAMERA_UP:       TVector3 = (x:0.0; y:1.0; z:0.0);
  SHADOW_CAMERA_FOVY = 45.0;
 
- SHADOW_BUFFER_WIDTH = 2048;   //todo lo hi
+ SHADOW_BUFFER_WIDTH = 2048*2;   //todo lo hi
 
  MAX_MODELS = 8;
 
@@ -71,7 +71,7 @@ uses math;
 function LoadRenderTextureWithDepthTexture(width, height: integer): TRenderTexture2D;
 var target: TRenderTexture2D;
 begin
-  target.id := rlLoadFramebuffer(width, height);   // Load an empty framebuffer
+  target.id := rlLoadFramebuffer();   // Load an empty framebuffer
   if target.id > 0 then
   begin
     rlEnableFramebuffer(target.id);

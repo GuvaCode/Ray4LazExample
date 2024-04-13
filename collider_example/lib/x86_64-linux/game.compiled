@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scaghi -Cg -CirotR -O1 -gw3 -gl -gh -Xg -gt -l -vewnhibq -Fi/home/vadim/Проекты/Ray4LazExample/collider_example/lib/x86_64-linux -Fl/home/vadim/Проекты/Ray4Laz/libs/x86_64-linux -Fu/home/vadim/Проекты/Ray4Laz/package/lib/x86_64-linux -Fu/usr/share/lazarus/3.2.0/packager/units/x86_64-linux -Fu/home/vadim/Проекты/Ray4LazExample/collider_example/ -FU/home/vadim/Проекты/Ray4LazExample/collider_example/lib/x86_64-linux/ -FE/home/vadim/Проекты/Ray4LazExample/collider_example/ -o/home/vadim/Проекты/Ray4LazExample/collider_example/game game.lpr"/>
+</CONFIG>
