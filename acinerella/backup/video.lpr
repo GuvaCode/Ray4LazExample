@@ -98,7 +98,7 @@ begin
 
 while not WindowShouldClose() do
 begin
-   if GetTime - oldtime * 1000 <= info.additional_info.video_info.frames_per_second  then
+   if GetTime - oldtime <= info.additional_info.video_info.frames_per_second / 1 then
     begin
       // if curFrame < curFrame * 1000 then
       // begin
