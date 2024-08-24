@@ -48,7 +48,7 @@ begin
                       Vector3Create(0.0,1.0,0.0),
                       45.0,0);
 
- SetCameraMode(camera, CAMERA_FIRST_PERSON);     // Set camera mode
+
  SetTargetFPS(60); // Set our game to run at 60 frames-per-second
 
  // Main game loop
@@ -69,7 +69,7 @@ begin
  // We check collision and movement x amount of times.
     for i:=0 to moveSpeed do
     begin
-      UpdateCamera(@camera);      // Update internal camera and our camera
+      UpdateCamera(@camera,CAMERA_FIRST_PERSON);      // Update internal camera and our camera
       if (camera.position.x<1) or (camera.position.x>mapwidth-2)
       then camera.position.x := oldCamPos.x;
       if (camera.position.z<1) or (camera.position.z>mapdepth-2)

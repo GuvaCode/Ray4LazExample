@@ -11,7 +11,7 @@ object camFrm: TcamFrm
   OnActivate = FormActivate
   OnCreate = FormCreate
   Position = poWorkAreaCenter
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '3.4.0.0'
   object Panel1: TPanel
     Left = 4
     Height = 403
@@ -206,8 +206,8 @@ object camFrm: TcamFrm
       Top = 368
       Width = 75
       Caption = 'Cancel'
-      OnClick = Button1Click
       TabOrder = 5
+      OnClick = Button1Click
     end
     object Button2: TButton
       Left = 183

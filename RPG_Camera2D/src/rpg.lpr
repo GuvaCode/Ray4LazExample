@@ -57,7 +57,7 @@ begin
       if IsKeyDown(KEY_RIGHT) then player.x:=player.x + 1;
 
 
-       UpdateCamera(@Camera);
+
        Camera.target:=Vector2Create(Player.x,Player.y);
        Camera.offset:=Vector2Create(800 /2,600/2);
 
@@ -69,17 +69,23 @@ begin
 
       BeginMode2D(camera);
 
+
+
+
         for x:=0 to 10
         do for y:=0 to 10 do
         DrawTextureEx(myGround[x][y],Vector2Create(x*32,Y*32),0,1,WHITE);
 
-        DrawTextureEx(player.tex,Vector2Create(player.X,player.Y),0,1,White);
+        DrawTextureEx(player.tex,Vector2Create(player.X,player.Y),0, 0.5 ,White);
 
 
         for t:=0 to 5 do
           begin
            DrawTextureEx(treeImg,Vector2Create(myTree[t].X,myTree[t].Y),0,1,White);
           end;
+
+
+
        EndMode2D;
         EndDrawing();
         DrawText('raylib in lazarus !!!', 20, 20, 10, DARKGRAY);

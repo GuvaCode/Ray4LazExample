@@ -125,8 +125,8 @@ var
       cam.up := Vector3Create(FCamUp.x, FCamUp.y, FCamUp.z);
       cam.fovy := FCamFOVY;
       cam.projection := CAMERA_PERSPECTIVE;
-      SetCameraMode(cam, CAMERA_CUSTOM);
-      UpdateCamera(@cam); // Update camera
+
+      UpdateCamera(@cam,CAMERA_CUSTOM); // Update camera
       SetWindowPosition(FPosx,FPosY);
       // draw
       BeginDrawing();

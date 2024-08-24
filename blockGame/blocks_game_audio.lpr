@@ -17,7 +17,7 @@
 program blocks_game_audio;
 
 {$mode objfpc}{$H+}
-{.$define LESSON02_SHAPES}
+{$define LESSON02_SHAPES}
 uses 
 cmem, raylib;
 

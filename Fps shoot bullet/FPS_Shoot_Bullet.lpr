@@ -48,9 +48,6 @@ begin
                       Vector3Create(0.0,1.0,0.0),
                       45.0,0);
 
- SetCameraMode(camera, CAMERA_FIRST_PERSON);     // Set camera mode
-
-
  bulletpos   := camera.position;
  bulletinc.x := 0.05;
  bulletinc.y := 0.00;
@@ -67,7 +64,7 @@ begin
  while not WindowShouldClose() do
  begin
  // Update
- UpdateCamera(@camera);      // Update internal camera and our camera
+ UpdateCamera(@camera, CAMERA_FIRST_PERSON);      // Update internal camera and our camera
 
  // Shoot the bullet.
         if IsKeyDown(KEY_SPACE) then

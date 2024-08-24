@@ -95,7 +95,7 @@ begin
       camera.position.x := cos(-ca/11)*8.0;
       camera.position.z := sin(-ca/11)*8.0;
 
-      UpdateCamera(@camera);
+      UpdateCamera(@camera,CAMERA_ORBITAL);
 
       if IsKeyPressed(KEY_SPACE) then
       if ShowToon then ShowToon:=false else ShowToon:=true;
