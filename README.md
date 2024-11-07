@@ -9,6 +9,12 @@ https://github.com/brihernandez/Ergo
 
 Fly a little ship around in a raylib project. The main purpose of this project has to figure out how to handle arbitrary rotations, since the built in rotation functions don't make this easy.
 
+**Scrolling and image resize**
+
+![Scrolling](Scrollling_and_Animation/prev.gif)
+
+An example of animation and scrolling of a texture
+
 
 **Toon Shader**
 

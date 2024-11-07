@@ -7,6 +7,7 @@
       <Unit>
         <Filename Value="fps_collison.lpr"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos X="22" Y="12"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -14,9 +15,7 @@
       <Unit>
         <Filename Value="collision.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="57"/>
         <CursorPos X="14" Y="70"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

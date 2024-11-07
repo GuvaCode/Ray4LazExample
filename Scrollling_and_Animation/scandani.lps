@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="scandani.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="135"/>
+        <CursorPos X="26" Y="174"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Ray4Laz/examples/textures/textures_background_scrolling/textures_background_scrolling.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="110" Y="57"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Ray4Laz/source/raylib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2208"/>
+        <CursorPos X="26" Y="2211"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/math.pp"/>
+        <UnitName Value="Math"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="97"/>
+        <CursorPos X="10" Y="109"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Ray4Laz/examples/textures/textures_sprite_anim/textures_sprite_anim.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="77"/>
+        <CursorPos X="23" Y="86"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../demo_text_fx/project1.lpr"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="114"/>
+        <CursorPos X="132" Y="117"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Ray4Laz/examples/text/text_font_spritefont/text_font_spritefont.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="53" Y="36"/>
+        <UsageCount Value="12"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="27">
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="140" Column="98" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="135" Column="52" TopLine="130"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="141" Column="139" TopLine="130"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="135" Column="50" TopLine="124"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="66" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="15" Column="5" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="108" Column="3" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="130" Column="156" TopLine="117"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="133" Column="40" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="109" Column="42" TopLine="95"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="108" Column="3" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="115" Column="37" TopLine="114"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="27" Column="23" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="121" Column="62" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="34" Column="52" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="151" Column="83" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="130" Column="85" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="16" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="55" Column="3" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="25" Column="7" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="117" Column="5" TopLine="101"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="173" Column="50" TopLine="161"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="98" Column="4" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="25" Column="34" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="108" Column="15" TopLine="96"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="23" Column="24" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="174" Column="8" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="scandani.lpr"/>
+        <Caret Line="174" Column="3" TopLine="54"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
