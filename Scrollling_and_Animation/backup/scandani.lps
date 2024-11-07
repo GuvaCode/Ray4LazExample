@@ -9,7 +9,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="111"/>
         <CursorPos X="26" Y="174"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -29,10 +29,10 @@
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/math.pp"/>
         <UnitName Value="Math"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="97"/>
         <CursorPos X="10" Y="109"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -47,7 +47,7 @@
         <EditorIndex Value="4"/>
         <TopLine Value="26"/>
         <CursorPos X="132" Y="117"/>
-        <UsageCount Value="16"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -62,7 +62,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="36"/>
         <CursorPos X="41" Y="55"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -70,50 +70,22 @@
         <EditorIndex Value="2"/>
         <TopLine Value="33"/>
         <CursorPos X="132" Y="38"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Загрузки/project1/ReplayAyflyUnit.pas"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Загрузки/project1/unit1.pas"/>
-        <ComponentName Value="Form1"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="150"/>
-        <ComponentState Value="1"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../Рабочий стол/project1(1)/AYLoader.pas"/>
-        <EditorIndex Value="6"/>
-        <CursorPos X="80" Y="13"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../Рабочий стол/project1(1)/ReplayAyflyUnit.pas"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="5"/>
-        <CursorPos X="21" Y="28"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../Рабочий стол/project1(1)/ayfly.pas"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="32"/>
-        <CursorPos X="15" Y="32"/>
-        <UsageCount Value="12"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="153"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>

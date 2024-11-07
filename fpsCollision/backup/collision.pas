@@ -152,7 +152,7 @@ begin
   // shift the new point by the delta to push us outside of the rectangle
   newPosOrigin := Vector2Add(newPosOrigin, delta);
 
-  center^ := Vector3Create( newPosOrigin.x, center^.y, newPosOrigin.y );
+  center := Vector3Create( newPosOrigin.x, center^.y, newPosOrigin.y );
   result := true;
 end;
 
