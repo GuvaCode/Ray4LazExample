@@ -7,8 +7,7 @@
       <Unit>
         <Filename Value="scandani.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="111"/>
-        <CursorPos X="26" Y="174"/>
+        <CursorPos X="36" Y="4"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit>
@@ -29,11 +28,10 @@
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/math.pp"/>
         <UnitName Value="Math"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="97"/>
         <CursorPos X="10" Y="109"/>
         <UsageCount Value="19"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../Ray4Laz/examples/textures/textures_sprite_anim/textures_sprite_anim.lpr"/>
@@ -44,11 +42,10 @@
       </Unit>
       <Unit>
         <Filename Value="../demo_text_fx/project1.lpr"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="132" Y="117"/>
         <UsageCount Value="16"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../Ray4Laz/examples/text/text_font_spritefont/text_font_spritefont.lpr"/>
@@ -59,25 +56,22 @@
       </Unit>
       <Unit>
         <Filename Value="../../../Загрузки/project1/AYLoader.pas"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="36"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
         <CursorPos X="41" Y="55"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Загрузки/project1/ayfly.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="33"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
         <CursorPos X="132" Y="38"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Загрузки/project1/ReplayAyflyUnit.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Загрузки/project1/unit1.pas"/>
@@ -85,150 +79,49 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="150"/>
         <ComponentState Value="1"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Рабочий стол/project1(1)/AYLoader.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="80" Y="13"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Рабочий стол/project1(1)/ReplayAyflyUnit.pas"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="21" Y="28"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../Рабочий стол/project1(1)/ayfly.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="32"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="44"/>
         <CursorPos X="15" Y="32"/>
         <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="977"/>
+        <CursorPos X="115" Y="994"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="27">
+    <JumpHistory HistoryIndex="1">
       <Position>
         <Filename Value="scandani.lpr"/>
-        <Caret Line="140" Column="98" TopLine="30"/>
+        <Caret Line="4" Column="36"/>
       </Position>
       <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="135" Column="52" TopLine="130"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="141" Column="139" TopLine="130"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="135" Column="50" TopLine="124"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="66" TopLine="56"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="15" Column="5" TopLine="2"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="108" Column="3" TopLine="91"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="130" Column="156" TopLine="117"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="133" Column="40" TopLine="112"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="109" Column="42" TopLine="95"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="108" Column="3" TopLine="103"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="115" Column="37" TopLine="114"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="27" Column="23" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="121" Column="62" TopLine="102"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="34" Column="52" TopLine="24"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="151" Column="83" TopLine="132"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="130" Column="85" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="16" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="55" Column="3" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="25" Column="7" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="117" Column="5" TopLine="101"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="173" Column="50" TopLine="161"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="98" Column="4" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="25" Column="34" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="108" Column="15" TopLine="96"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="23" Column="24" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="174" Column="8" TopLine="162"/>
-      </Position>
-      <Position>
-        <Filename Value="scandani.lpr"/>
-        <Caret Line="174" Column="3" TopLine="54"/>
+        <Filename Value="../../Ray4Laz/source/raylib.pas"/>
+        <Caret TopLine="10"/>
       </Position>
     </JumpHistory>
     <RunParams>

@@ -107,14 +107,14 @@ begin
 
     if (SpeedLayer[1] <= - TextureLayer[i].width*3) then SpeedLayer[1] := 0;
 
-   if (GetMusicTimePlayed(Music) > 1) and (GetMusicTimePlayed(Music) < 8) and (LogoAlpha < 255)
+   if (GetMusicTimePlayed(Music) > 1) and (GetMusicTimePlayed(Music) < 5) and (LogoAlpha < 255)
    then Inc(LogoAlpha) else
    if LogoAlpha > 0 then Dec(LogoAlpha);
 
    if (GetMusicTimePlayed(Music) > 1) and (TextureAlpha < 255)
    then Inc(TextureAlpha);
 
-   if (GetMusicTimePlayed(Music) > 8) then isScroll := true;
+   if (GetMusicTimePlayed(Music) > 14) then isScroll := true;
 
    texColor := ColorCreate(255,255,255,TextureAlpha);
 
