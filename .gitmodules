@@ -1,0 +1,3 @@
+[submodule "use/ray4laz"]
+	path = use/ray4laz
+	url = git@github.com:GuvaCode/ray4laz.git
