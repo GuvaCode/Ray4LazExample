@@ -22,6 +22,7 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
+          - windows-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -32,3 +33,8 @@ jobs:
       if: runner.os == 'Linux'
       shell: bash
       run: bash make.sh build
+
+    - name: Build on Windows
+      if: runner.os == 'Windows'
+      shell: powershell
+      run: pwsh -File make.ps1 build
