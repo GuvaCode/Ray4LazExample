@@ -30,7 +30,7 @@ Function Install-Program {
                 & ".\$($Input.Current)" /SP- /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null
             }
         }
-        Remove-Item -Verbose $Input.Current
+        Remove-Item $Input.Current
     }
 }
 
@@ -87,8 +87,8 @@ Function Build-Project {
                 $Env:Ext += 1
                 $Result += $Output | Select-String -Pattern 'Error:', 'Fatal:'
             }
-            $Result | Out-Host
-        }
+            Return $Result
+        } | ForEach-Object { $_ | Out-Host }
     Exit $Env:Ext
 }
 
