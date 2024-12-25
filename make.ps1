@@ -51,14 +51,14 @@ Function Build-Project {
     $Env:Src = 'src'
     $Env:Use = 'use'
     $Env:Pkg = 'use\components.txt'
-    If (Test-Path -Path $Env.Use) {
+    If (Test-Path -Path $Env:Use) {
         If (Test-Path -Path '.gitmodules') {
             & git submodule update --init --recursive --force --remote | Out-Null
         }
-        If (Test-Path -Path $Env.Pkg) {
-            Get-Content -Path $Env.Pkg |
+        If (Test-Path -Path $Env:Pkg) {
+            Get-Content -Path $Env:Pkg |
                 Where-Object {
-                    ! (Test-Path -Path "$($Env.Use)\$($_)") &&
+                    ! (Test-Path -Path "$($Env:Use)\$($_)") &&
                     ! (& lazbuild --verbose-pkgsearch $_ ) &&
                     ! (& lazbuild --add-package $_)
                 } | ForEach-Object {
@@ -68,28 +68,28 @@ Function Build-Project {
                     }
                 } | ForEach-Object -Paralel {
                     Invoke-WebRequest @_
-                    Expand-Archive -Path $_.OutFile -DestinationPath "$($Env.Use)\$($_)"
+                    Expand-Archive -Path $_.OutFile -DestinationPath "$($Env:Use)\$($_)"
                     Remove-Item $_.OutFile
                 }
         }
-        (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env.Use).FullName |
+        (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env:Use).FullName |
             ForEach-Object -Parallel {
                 & lazbuild --add-package-link $_ | Out-Null
             }
     }
-    (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env.Src).FullName |
+    (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env:Src).FullName |
         ForEach-Object -Parallel {
             $Result = @()
             $Output = (& lazbuild --build-all --recursive --no-write-project --build-mode='release' $_)
             If ($LastExitCode -eq 0) {
                 $Result += $Output | Select-String -Pattern 'Linking'
             } Else {
-                $Env.Ext += 1
+                $Env:Ext += 1
                 $Result += $Output | Select-String -Pattern 'Error:', 'Fatal:'
             }
             $Result | Out-Host
         }
-    Exit $Env.Ext
+    Exit $Env:Ext
 }
 
 Function Switch-Action {
