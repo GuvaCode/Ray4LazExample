@@ -13,7 +13,7 @@ Function Request-File {
     While ($Input.MoveNext()) {
         $VAR = @{
             Uri = $Input.Current
-            OutFile = 'Temp:\' + (Split-Path -Path $Input.Current -Leaf).Split('?')[0]
+            OutFile = 'Temp:' + (Split-Path -Path $Input.Current -Leaf).Split('?')[0]
         }
         Invoke-WebRequest @VAR
         Return $VAR.OutFile
