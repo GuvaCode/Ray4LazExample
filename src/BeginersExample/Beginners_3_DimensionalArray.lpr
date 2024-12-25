@@ -30,7 +30,7 @@ begin
     map[9][0][9] := 40;
 
     // Boolean map. Only true or false.
-    boolmap[10][10][10] := false;
+    boolmap[9][9][9] := false;
     boolmap[1][1][2] := true;
 
  SetTargetFPS(60);
