@@ -16,7 +16,7 @@ function priv_lazbuild
         case ${ID:?} in
             debian | ubuntu)
                 sudo apt-get update
-                sudo apt-get install -y lazarus{-ide-qt5,}
+                sudo apt-get install -y lazarus{-ide-qt5,} &
                 ;;
         esac
     fi
@@ -27,9 +27,10 @@ function priv_lazbuild
     )
     export VAR
     if [[ -d "${VAR[use]}" ]]; then
-        #if [[ -f '.gitmodules' ]]; then
-        #    git submodule update --init --recursive --force --remote
-        #fi
+        if [[ -f '.gitmodules' ]]; then
+            git submodule update --init --recursive --force --remote &
+        fi
+        wait
         if [[ -f "${VAR[pkg]}" ]]; then
             while read -r; do
                 if [[ -n "${REPLY}" ]] &&
@@ -37,10 +38,12 @@ function priv_lazbuild
                     ! (lazbuild --verbose-pkgsearch "${REPLY}") &&
                     ! (lazbuild --add-package "${REPLY}"); then
                         declare -A TMP=(
+                            [url]="https://packages.lazarus-ide.org/${REPLY}.zip"
+                            [dir]="${VAR[use]}/${REPLY}"
                             [out]=$(mktemp)
                         )
-                        wget --quiet --output-document "${TMP[out]}" "https://packages.lazarus-ide.org/${REPLY}.zip"
-                        unzip -o "${TMP[out]}" -d "${VAR[use]}/${REPLY}"
+                        wget --quiet --output-document "${TMP[out]}" "${TMP[url]}"
+                        unzip -o "${TMP[out]}" -d "${TMP[dir]}"
                         rm --verbose "${TMP[out]}"
                     fi
             done < "${VAR[pkg]}"
@@ -79,5 +82,4 @@ function priv_main
     fi
 )
 
-exit 0
 priv_main "${@}" >/dev/null
