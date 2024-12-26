@@ -69,12 +69,14 @@ Function Build-Project {
                     Invoke-WebRequest @TMP
                     Expand-Archive -Path $TMP.OutFile -DestinationPath "$($Env:Use)\$($_)"
                     Remove-Item $TMP.OutFile
-                }
+                    Return ".... download $($TMP.Uri)"
+                } | ForEach-Object { $_ | Out-Host }
         }
         (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env:Use).FullName |
             ForEach-Object -Parallel {
                 & lazbuild --add-package-link $_ | Out-Null
-            }
+                Return ".... [$($LastExitCode)] add package link $($_)"
+            } | ForEach-Object { $_ | Out-Host }
     }
     (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env:Src).FullName |
         ForEach-Object -Parallel {
