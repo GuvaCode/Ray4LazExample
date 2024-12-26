@@ -61,15 +61,14 @@ Function Build-Project {
                     ! (Test-Path -Path "$($Env:Use)\$($_)") &&
                     ! (& lazbuild --verbose-pkgsearch $_ ) &&
                     ! (& lazbuild --add-package $_)
-                } | ForEach-Object {
-                    Return @{
+                } | ForEach-Object -Paralel {
+                    $VAR = @{
                         Uri = "https://packages.lazarus-ide.org/$($_).zip"
                         OutFile = (New-TemporaryFile).FullName
                     }
-                } | ForEach-Object -Paralel {
-                    Invoke-WebRequest @_
-                    Expand-Archive -Path $_.OutFile -DestinationPath "$($Env:Use)\$($_)"
-                    Remove-Item $_.OutFile
+                    Invoke-WebRequest @VAR
+                    Expand-Archive -Path $VAR.OutFile -DestinationPath "$($Env:Use)\$($_)"
+                    Remove-Item $VAR.OutFile
                 }
         }
         (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env:Use).FullName |
@@ -89,6 +88,7 @@ Function Build-Project {
             }
             Return $Result
         } | ForEach-Object { $_ | Out-Host }
+    $Env:Ext | Out-Host
     Exit $Env:Ext
 }
 
