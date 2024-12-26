@@ -27,9 +27,9 @@ function priv_lazbuild
     )
     export VAR
     if [[ -d "${VAR[use]}" ]]; then
-        if [[ -f '.gitmodules' ]]; then
-            git submodule update --init --recursive --force --remote
-        fi
+        #if [[ -f '.gitmodules' ]]; then
+        #    git submodule update --init --recursive --force --remote
+        #fi
         if [[ -f "${VAR[pkg]}" ]]; then
             while read -r; do
                 if [[ -n "${REPLY}" ]] &&
@@ -62,7 +62,7 @@ function priv_lazbuild
             ((errors+=1))
         fi 1>&2
         rm "${TMP[out]}"
-    done < <(find "${VAR[src]}" -type 'f' -name '*.lpi')
+    done < <(find "${VAR[src]}" -type 'f' -name '*.lpi' | sort)
     exit "${errors}"
 )
 
@@ -79,4 +79,5 @@ function priv_main
     fi
 )
 
+exit 0
 priv_main "${@}" >/dev/null
