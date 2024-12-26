@@ -25,12 +25,11 @@ function priv_lazbuild
         [use]='use'
         [pkg]='use/components.txt'
     )
-    export VAR
+    if [[ -f '.gitmodules' ]]; then
+        git submodule update --init --recursive --force --remote &
+    fi
+    wait
     if [[ -d "${VAR[use]}" ]]; then
-        if [[ -f '.gitmodules' ]]; then
-            git submodule update --init --recursive --force --remote &
-        fi
-        wait
         if [[ -f "${VAR[pkg]}" ]]; then
             while read -r; do
                 if [[ -n "${REPLY}" ]] &&
@@ -71,7 +70,7 @@ function priv_lazbuild
 
 function priv_main
 (
-    set -euo pipefail
+    set -xeuo pipefail
     if ((${#})); then
         case ${1} in
             build) priv_lazbuild ;;

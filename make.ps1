@@ -47,14 +47,14 @@ Function Build-Project {
             $Env:PATH+=";$($_.Path)"
             (Get-Command $_.Cmd).Source | Out-Host
         }
+    If (Test-Path -Path '.gitmodules') {
+        & git submodule update --init --recursive --force --remote | Out-Null
+    }
     $Env:Ext = '0'
     $Env:Src = 'src'
     $Env:Use = 'use'
     $Env:Pkg = 'use\components.txt'
     If (Test-Path -Path $Env:Use) {
-        If (Test-Path -Path '.gitmodules') {
-            & git submodule update --init --recursive --force --remote | Out-Null
-        }
         If (Test-Path -Path $Env:Pkg) {
             Get-Content -Path $Env:Pkg |
                 Where-Object {
