@@ -80,8 +80,8 @@ Function Build-Project {
     }
     (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env:Src).FullName |
         ForEach-Object -Parallel {
-            $Result = @(".... $($_)")
             $Output = (& lazbuild --build-all --recursive --no-write-project --build-mode='release' $_)
+            $Result = @(".... [$($LastExitCode)] build project $($_)")
             If ($LastExitCode -eq 0) {
                 $Result += $Output | Select-String -Pattern 'Linking'
             } Else {
