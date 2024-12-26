@@ -44,7 +44,7 @@ Function Build-Project {
     ) | Where-Object { ! (Test-Path -Path $_.Path) } |
         ForEach-Object {
             $_.Url | Request-File | Install-Program
-            $env:PATH+=";$($_.Path)"
+            $Env:PATH+=";$($_.Path)"
             (Get-Command $_.Cmd).Source | Out-Host
         }
     $Env:Ext = 0
@@ -69,17 +69,17 @@ Function Build-Project {
                     Invoke-WebRequest @TMP
                     Expand-Archive -Path $TMP.OutFile -DestinationPath "$($Env:Use)\$($_)"
                     Remove-Item $TMP.OutFile
-                    Return ".... download $($TMP.Uri)"
-                } | ForEach-Object { $_ | Out-Host }
+                    ".... download $($TMP.Uri)" | Out-Host
+                }
         }
         (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env:Use).FullName |
-            ForEach-Object -Parallel {
+            ForEach-Object {
                 & lazbuild --add-package-link $_ | Out-Null
-                Return ".... [$($LastExitCode)] add package link $($_)"
-            } | ForEach-Object { $_ | Out-Host }
+                ".... [$($LastExitCode)] add package link $($_)" | Out-Host
+            }
     }
     (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env:Src).FullName |
-        ForEach-Object -Parallel {
+        ForEach-Object {
             $Output = (& lazbuild --build-all --recursive --no-write-project --build-mode='release' $_)
             $Result = @(".... [$($LastExitCode)] build project $($_)")
             If ($LastExitCode -eq 0) {
@@ -88,9 +88,8 @@ Function Build-Project {
                 $Env:Ext = [Int]$Env:Ext + 1
                 $Result += $Output | Select-String -Pattern 'Error:', 'Fatal:'
             }
-            Return $Result
-        } | ForEach-Object { $_ | Out-Host }
-    $Env:Ext | Out-Host
+            $Result | Out-Host
+        }
     Exit [Int]$Env:Ext
 }
 
