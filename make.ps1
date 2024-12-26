@@ -62,13 +62,13 @@ Function Build-Project {
                     ! (& lazbuild --verbose-pkgsearch $_ ) &&
                     ! (& lazbuild --add-package $_)
                 } | ForEach-Object -Paralel {
-                    $VAR = @{
+                    $TMP = @{
                         Uri = "https://packages.lazarus-ide.org/$($_).zip"
                         OutFile = (New-TemporaryFile).FullName
                     }
-                    Invoke-WebRequest @VAR
-                    Expand-Archive -Path $VAR.OutFile -DestinationPath "$($Env:Use)\$($_)"
-                    Remove-Item $VAR.OutFile
+                    Invoke-WebRequest @TMP
+                    Expand-Archive -Path $TMP.OutFile -DestinationPath "$($Env:Use)\$($_)"
+                    Remove-Item $TMP.OutFile
                 }
         }
         (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env:Use).FullName |
@@ -78,18 +78,18 @@ Function Build-Project {
     }
     (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env:Src).FullName |
         ForEach-Object -Parallel {
-            $Result = @()
+            $Result = @(".... $($_)")
             $Output = (& lazbuild --build-all --recursive --no-write-project --build-mode='release' $_)
             If ($LastExitCode -eq 0) {
                 $Result += $Output | Select-String -Pattern 'Linking'
             } Else {
-                $Env:Ext += 1
+                $Env:Ext = [Int]$Env:Ext + 1
                 $Result += $Output | Select-String -Pattern 'Error:', 'Fatal:'
             }
             Return $Result
         } | ForEach-Object { $_ | Out-Host }
     $Env:Ext | Out-Host
-    Exit $Env:Ext
+    Exit [Int]$Env:Ext
 }
 
 Function Switch-Action {
