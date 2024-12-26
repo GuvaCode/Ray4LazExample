@@ -61,7 +61,7 @@ Function Build-Project {
                     ! (Test-Path -Path "$($Env:Use)\$($_)") &&
                     ! (& lazbuild --verbose-pkgsearch $_ ) &&
                     ! (& lazbuild --add-package $_)
-                } | ForEach-Object -Paralel {
+                } | ForEach-Object {
                     $TMP = @{
                         Uri = "https://packages.lazarus-ide.org/$($_).zip"
                         OutFile = (New-TemporaryFile).FullName
