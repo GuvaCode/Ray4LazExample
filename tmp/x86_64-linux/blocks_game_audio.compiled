@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
-  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -Fi/home/vadim/Проекты/Ray4LazExample/tmp/x86_64-linux -Fl/home/vadim/Проекты/Ray4Laz/libs/x86_64-linux -Fu/home/vadim/Проекты/Ray4Laz/package/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/packager/units/x86_64-linux -Fu/home/vadim/Проекты/Ray4LazExample/blockGame/ -FU/home/vadim/Проекты/Ray4LazExample/tmp/x86_64-linux/ -FE/home/vadim/Проекты/Ray4LazExample/ -o/home/vadim/Проекты/Ray4LazExample/blocks_game_audio blocks_game_audio.lpr"/>
-</CONFIG>
