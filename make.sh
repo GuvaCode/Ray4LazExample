@@ -20,15 +20,15 @@ function priv_lazbuild
                 ;;
         esac
     fi
+    if [[ -f '.gitmodules' ]]; then
+        git submodule update --init --recursive --force --remote &
+    fi
+    wait
     declare -rA VAR=(
         [src]='src'
         [use]='use'
         [pkg]='use/components.txt'
     )
-    if [[ -f '.gitmodules' ]]; then
-        git submodule update --init --recursive --force --remote &
-    fi
-    wait
     if [[ -d "${VAR[use]}" ]]; then
         if [[ -f "${VAR[pkg]}" ]]; then
             while read -r; do
@@ -47,8 +47,8 @@ function priv_lazbuild
                     fi
             done < "${VAR[pkg]}"
         fi
-        find "${VAR[use]}" -type 'f' -name '*.lpk' -print -exec \
-            lazbuild --add-package-link {} +
+        find "${VAR[use]}" -type 'f' -name '*.lpk' -printf '\033[32m\tadd package link\t%p\033[0m\n' -exec \
+            lazbuild --add-package-link {} + 1>&2
     fi
     declare -i errors=0
     while read -r; do

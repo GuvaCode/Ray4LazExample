@@ -48,7 +48,8 @@ Function Build-Project {
             (Get-Command $_.Cmd).Source | Out-Host
         }
     If (Test-Path -Path '.gitmodules') {
-        & git submodule update --init --recursive --force --remote | Out-Null
+        & git submodule update --init --recursive --force --remote | Out-Host
+        ".... [[$($LastExitCode)]] git submodule update" | Out-Host
     }
     $Env:Ext = '0'
     $Env:Src = 'src'
@@ -72,15 +73,13 @@ Function Build-Project {
                     Expand-Archive -Path $_.OutFile -DestinationPath $_.Path
                     Remove-Item $_.OutFile
                     Return ".... download $($_.Uri)"
-                } | ForEach-Object {
-                    $_ | Out-Host
-                }
+                } | Out-Host
         }
         (Get-ChildItem -Filter '*.lpk' -Recurse -File –Path $Env:Use).FullName |
             ForEach-Object {
-                & lazbuild --add-package-link $_ | Out-Null
-                ".... [$($LastExitCode)] add package link $($_)" | Out-Host
-            }
+                & lazbuild --add-package-link $_ | Out-Host
+                Return ".... [$($LastExitCode)] add package link $($_)"
+            } | Out-Host
     }
     (Get-ChildItem -Filter '*.lpi' -Recurse -File –Path $Env:Src).FullName |
         ForEach-Object {
