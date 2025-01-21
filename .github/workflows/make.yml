@@ -40,12 +40,12 @@ jobs:
           apt-get -y install lazarus lib{avformat,avutil,avcodec,swscale}-dev cppcheck
         ' >/dev/null
         mkdir -p use/acinerella/build
-        if pushd use/acinerella/build;then
-            cmake ..
-            make
-            sudo cp ../libacinerella.so /usr/lib/
-            sudo ldconfig --verbose
-        fi
+        (if pushd use/acinerella/build;then
+          cmake ..
+          make
+          sudo cp libacinerella.so /usr/lib/
+        fi)
+        sudo ldconfig --verbose
         find "${PWD}" -type 'f' -name '*.c' -exec cppcheck --quiet \
           --enable=warning {} + >&2
         instantfpc -Fu/usr/lib/lazarus/*/components/lazutils \
