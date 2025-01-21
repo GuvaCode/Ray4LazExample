@@ -2,7 +2,7 @@ program video;
 
 {$mode Delphi}{$H+}
 
-uses raylib, rlGl, acinerella, epiktimer, Classes, SysUtils;
+uses raylib, rlGl, acinerella, epiktimer, etpackage, Classes, SysUtils;
 
 const
  screenWidth = 800;

@@ -24,7 +24,7 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - windows-latest
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -32,11 +32,21 @@ jobs:
         submodules: true
 
     - name: Build on Linux
-      if: runner.os == 'Linux'
       shell: bash
-      run: bash make.sh build
-
-    - name: Build on Windows
-      if: runner.os == 'Windows'
-      shell: powershell
-      run: pwsh -File make.ps1 build
+      run: |
+        set -xeuo pipefail
+        sudo bash -c '
+          apt-get update
+          apt-get -y install lazarus lib{avformat,avutil,avcodec,swscale}-dev cppcheck
+        ' >/dev/null
+        mkdir -p use/acinerella/build
+        (if pushd use/acinerella/build;then
+          cmake ..
+          make
+          sudo cp libacinerella.so /usr/lib/
+        fi)
+        sudo ldconfig --verbose
+        find "${PWD}" -type 'f' -name '*.c' -exec cppcheck --quiet \
+          --enable=warning {} + >&2
+        instantfpc -Fu/usr/lib/lazarus/*/components/lazutils \
+          -B '.github/workflows/make.pas'

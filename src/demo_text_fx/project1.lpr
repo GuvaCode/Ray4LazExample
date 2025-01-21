@@ -47,7 +47,7 @@ begin
   Texture := LoadTexture('space.png');
   LogoTexture := LoadTexture('raylib_logo.png');
   // Load shader and setup location points and values
-  Shader := LoadShader(nil, GetAppDir('wave.fs'));
+  Shader := LoadShader(nil, 'wave.fs');
   secondsLoc := GetShaderLocation(shader, 'seconds');
   freqXLoc := GetShaderLocation(shader, 'freqX');
   freqYLoc := GetShaderLocation(shader, 'freqY');
