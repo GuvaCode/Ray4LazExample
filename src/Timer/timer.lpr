@@ -2,8 +2,8 @@ program timer;
 
 {$mode objfpc}{$H+}
 
-uses 
-cmem, 
+uses
+cmem,
 raymath,
 raylib;
 
@@ -12,10 +12,10 @@ const
   screenHeight = 450;
 
 type
-  PTimer = ^Timer;
-  Timer = record
-  Lifetime: single;
+  TTimer = record
+    Lifetime: single;
   end;
+  PTimer = ^TTimer;
 
   // start or restart a timer with a specific lifetime
   procedure StartTimer(timer:PTimer; lifetime: single);
@@ -36,12 +36,12 @@ type
   begin
     if timer <> nil then
         result:= timer^.Lifetime <= 0 else
-	result:= false;
+    result:= false;
   end;
 
 var radius,speed,ballLife: single;
     pos,dir: TVector2;
-    ballTimer: Timer;
+    ballTimer: TTimer;
 
 begin
   // Initialization

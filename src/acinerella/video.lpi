@@ -84,6 +84,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="etpackage"/>
+      </Item>
+      <Item>
         <PackageName Value="LCLBase"/>
       </Item>
       <Item>

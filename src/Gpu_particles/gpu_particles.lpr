@@ -104,7 +104,7 @@ begin
   // This is the input to the vertex shader.
   rlEnableVertexAttribute(0);
   rlLoadVertexBuffer(@vertices, sizeof(vertices),  false); // dynamic=false
-  rlSetVertexAttribute(0, 3, RL_FLOAT, false, 0, nil);
+  rlSetVertexAttribute(0, 3, RL_FLOAT, false, 0, 0);
   rlDisableVertexArray(); // Stop editing.
 
   camera := Camera3DCreate(Vector3Create(2, 2, 2), Vector3Zero, Vector3Create(0,1,0),35.0,CAMERA_PERSPECTIVE);
